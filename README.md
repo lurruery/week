@@ -1,7 +1,7 @@
 # 每周一道javascript 算法题 
 > 题目来源: http://oj.n.xiaomi.com/
 
-##说明
+## 说明
 
 > MiOJ 代码编译平台 Node.js 版本 6.3.1
 > 框架
