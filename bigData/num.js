@@ -10,7 +10,6 @@ function solution(line) {
   var flag = 0; //用来表示是否需要借位
   var num = '';  //最后的数字
   var zero = '';
-  var diff = length1 - length2;
 
   //字符串反转
   function reverseString(str) {
@@ -18,7 +17,7 @@ function solution(line) {
   };
 
   //字符串拼接,对num2 进行补0处理
-  for(var i = 0; i < diff; i++){
+  for(var i = 0; i < length1 - length2; i++){
     zero += '0';
   }
   num2 = zero + num2;  //字符串转数字
