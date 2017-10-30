@@ -13,7 +13,7 @@ function solution(line) {
 
   //字符串反转
   function reverseString(str) {
-    return str && reverseString(str.substr(1)) + str[0];
+    return str.split("").reverse().join("");
   };
 
   //字符串拼接,对num2 进行补0处理
