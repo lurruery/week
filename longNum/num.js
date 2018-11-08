@@ -10,7 +10,6 @@ function solution(line) {
 	//从数组中删除一个元素
 	let deleteData = (num) => arr.splice(arr.findIndex(item => item === num), 1);
 
-
 	//寻找上边界
 	let getTop = (num) => {
 		let num1 = 0;
