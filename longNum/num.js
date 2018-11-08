@@ -10,35 +10,23 @@ function solution(line) {
 	//从数组中删除一个元素
 	let deleteData = (num) => arr.splice(arr.findIndex(item => item === num), 1);
 
-	//寻找上边界
-	let getTop = (num) => {
+	let getLength = (num) => {
 		let num1 = 0;
+		let num2 = 0;
 		arr.forEach(function(k,i){
 			if(arr.indexOf(Number(num) + i + 1) > -1){
 				num1 ++;
 			}
-		});
-		return num1;
-	};
-
-	//寻找下边界
-	let  getBottom = (num) =>{
-		let num2 = 0;
-		arr.forEach(function(k,i){
 			if(arr.indexOf(Number(num) - i - 1) > -1){
 				num2 ++;
 			}
 		});
-		return num2;
-	};
-
-	//记录一个序列的长度
-	let getLenth = (num) => getTop(num) + getBottom(num) + 1;
+		return num1 + num2 + 1;
+	}
 
 	arr.forEach(function(k, i){
-		resultArr.push(getLenth(k));
+		resultArr.push(getLength(k));
 	});
 
 	return Math.max.apply(null, resultArr);
 }
-
