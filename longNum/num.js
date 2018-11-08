@@ -33,9 +33,7 @@ function solution(line) {
 	};
 
 	//记录一个序列的长度
-	let getLenth = (num) => {
-		return getTop(num) + getBottom(num) + 1;
-	}
+	let getLenth = (num) => getTop(num) + getBottom(num) + 1;
 
 	arr.forEach(function(k, i){
 		resultArr.push(getLenth(k));
